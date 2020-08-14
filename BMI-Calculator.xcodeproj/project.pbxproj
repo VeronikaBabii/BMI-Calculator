@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1596583524E6B1C300A78B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596583424E6B1C300A78B44 /* AppDelegate.swift */; };
 		1596583724E6B1C300A78B44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596583624E6B1C300A78B44 /* SceneDelegate.swift */; };
-		1596583924E6B1C300A78B44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596583824E6B1C300A78B44 /* ViewController.swift */; };
+		1596583924E6B1C300A78B44 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596583824E6B1C300A78B44 /* CalculateViewController.swift */; };
 		1596583C24E6B1C300A78B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1596583A24E6B1C300A78B44 /* Main.storyboard */; };
 		1596583E24E6B1C600A78B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1596583D24E6B1C600A78B44 /* Assets.xcassets */; };
 		1596584124E6B1C600A78B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1596583F24E6B1C600A78B44 /* LaunchScreen.storyboard */; };
+		1596584C24E6B24700A78B44 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596584B24E6B24700A78B44 /* CalculatorBrain.swift */; };
+		1596584E24E6B25B00A78B44 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596584D24E6B25B00A78B44 /* BMI.swift */; };
+		1596585024E6B27F00A78B44 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1596584F24E6B27F00A78B44 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1596583124E6B1C300A78B44 /* BMI-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1596583424E6B1C300A78B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1596583624E6B1C300A78B44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1596583824E6B1C300A78B44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1596583824E6B1C300A78B44 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		1596583B24E6B1C300A78B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1596583D24E6B1C600A78B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1596584024E6B1C600A78B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1596584224E6B1C600A78B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1596584B24E6B24700A78B44 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		1596584D24E6B25B00A78B44 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		1596584F24E6B27F00A78B44 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				1596583424E6B1C300A78B44 /* AppDelegate.swift */,
 				1596583624E6B1C300A78B44 /* SceneDelegate.swift */,
-				1596583824E6B1C300A78B44 /* ViewController.swift */,
-				1596583A24E6B1C300A78B44 /* Main.storyboard */,
+				1596584A24E6B1EB00A78B44 /* Models */,
+				1596584924E6B1E100A78B44 /* Views */,
+				1596584824E6B1D700A78B44 /* Controllers */,
 				1596583D24E6B1C600A78B44 /* Assets.xcassets */,
 				1596583F24E6B1C600A78B44 /* LaunchScreen.storyboard */,
 				1596584224E6B1C600A78B44 /* Info.plist */,
 			);
 			path = "BMI-Calculator";
+			sourceTree = "<group>";
+		};
+		1596584824E6B1D700A78B44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1596583824E6B1C300A78B44 /* CalculateViewController.swift */,
+				1596584F24E6B27F00A78B44 /* ResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1596584924E6B1E100A78B44 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1596583A24E6B1C300A78B44 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1596584A24E6B1EB00A78B44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1596584B24E6B24700A78B44 /* CalculatorBrain.swift */,
+				1596584D24E6B25B00A78B44 /* BMI.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1596583924E6B1C300A78B44 /* ViewController.swift in Sources */,
+				1596584E24E6B25B00A78B44 /* BMI.swift in Sources */,
+				1596583924E6B1C300A78B44 /* CalculateViewController.swift in Sources */,
 				1596583524E6B1C300A78B44 /* AppDelegate.swift in Sources */,
+				1596584C24E6B24700A78B44 /* CalculatorBrain.swift in Sources */,
 				1596583724E6B1C300A78B44 /* SceneDelegate.swift in Sources */,
+				1596585024E6B27F00A78B44 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.veronikababii.BMI-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.veronikababii.BMI-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
